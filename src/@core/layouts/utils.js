@@ -82,7 +82,7 @@ export const removeChildren = (children, openGroup, currentActiveGroup) => {
 }
 
 export const canViewMenuGroup = item => {
-  const ability = useContext(AbilityContext)
+  // const ability = useContext(AbilityContext)
   // ! This same logic is used in canViewHorizontalNavMenuGroup and canViewHorizontalNavMenuHeaderGroup. So make sure to update logic in them as well
   
   // const hasAnyVisibleChild = item.children && item.children.some(i => ability.can(i.action, i.resource))
@@ -93,10 +93,10 @@ export const canViewMenuGroup = item => {
   if (!(item.action && item.resource)) {
     return hasAnyVisibleChild
   }
-  return ability.can(item.action, item.resource) && hasAnyVisibleChild
+  // return ability.can(item.action, item.resource) && hasAnyVisibleChild
 }
 
 export const canViewMenuItem = item => {
-  const ability = useContext(AbilityContext)
-  return ability.can(item.action, item.resource)
+  // const ability = useContext(AbilityContext)
+  // return ability.can(item.action, item.resource)
 }

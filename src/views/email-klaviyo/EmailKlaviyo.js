@@ -33,13 +33,13 @@ const EmailKlaviyo = () => {
         data.append('subject', 'Discount') 
         data.append('preview_text', 'Hellooo') 
         data.append('reply_to_address', 'True') 
-        data.append('template', fs.writeFile("about.txt", "about us", (err) => {
-            if (err) {
-              console.log(err)
-            } else {
-              console.log("File created")
-            }
-          }))
+        // data.append('template', fs.writeFile("about.txt", "about us", (err) => {
+        //     if (err) {
+        //       console.log(err)
+        //     } else {
+        //       console.log("File created")
+        //     }
+        //   }))
         data.append('domain', 'SMTP') 
         data.append('app', 'superleadz') 
         data.append('event', 'discount') 

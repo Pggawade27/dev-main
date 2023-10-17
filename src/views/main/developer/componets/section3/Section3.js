@@ -1,6 +1,7 @@
 import React from 'react'
-import { Card, Col, Row } from 'reactstrap'
+import { Col, Row } from 'reactstrap'
 import {FiSettings} from "react-icons/fi"
+import {MdPrivacyTip} from "react-icons/md"
 
 export const Section3 = () => {
   return (
@@ -18,7 +19,7 @@ export const Section3 = () => {
             </Col>
         </Row>
         <Row className='text-center mt-4'>
-            <Col md={6}>
+            <Col md={6} sm={12}>
                 <div className='d-flex justify-content-center'>
                     <div className='img'>
                         <FiSettings size={50}/>
@@ -34,14 +35,48 @@ export const Section3 = () => {
                 </div>
             </Col>
 
-            <Col md={6}>
-                <div>
+            <Col md={6} sm={12}>
+                <div className='d-flex justify-content-center'>
                     <div className='img'>
-
+                        <MdPrivacyTip size={50}/>
                     </div>
-                    <div className='Data-privacy-first'>
+                    <div className='Data-privacy-first ms-2'>
                         <div className='heading'>
-                            <h2 style={{textAlign: "left"}}>Data privacy first</h2>
+                            <h3 style={{textAlign: "left"}}>Data privacy first</h3>
+                        </div>
+                        <div className='info'>
+                            <p style={{textAlign: "left"}}>Our in-built security protocols future-proof you against data theft & ad fraud.</p>
+                        </div>
+                    </div>
+                </div>
+            </Col>
+        </Row>
+
+        <Row className='text-center mt-4'>
+            <Col md={6} sm={12}>
+                <div className='d-flex justify-content-center'>
+                    <div className='img'>
+                        <FiSettings size={50}/>
+                    </div>
+                    <div className='Easy-to-integrate ms-2'>
+                        <div className='heading'>
+                            <h3 style={{textAlign: "left"}}>Easy to integrate</h3>
+                        </div>
+                        <div className='info'>
+                            <p style={{textAlign: "left"}}>Deeply integrate our APIs into your applications with ease.</p>
+                        </div>
+                    </div>
+                </div>
+            </Col>
+
+            <Col md={6} sm={12}>
+                <div className='d-flex justify-content-center'>
+                    <div className='img'>
+                        <MdPrivacyTip size={50}/>
+                    </div>
+                    <div className='Data-privacy-first ms-2'>
+                        <div className='heading'>
+                            <h3 style={{textAlign: "left"}}>Data privacy first</h3>
                         </div>
                         <div className='info'>
                             <p style={{textAlign: "left"}}>Our in-built security protocols future-proof you against data theft & ad fraud.</p>
